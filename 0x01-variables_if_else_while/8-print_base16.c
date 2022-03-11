@@ -12,7 +12,7 @@ int main(void)
 	for (a = 48; a <= 122; a++)
 	{
 
-		if((a < 58 || a >= 97) && a <= 102)
+		if ((a < 58 || a >= 97) && a <= 102)
 		{
 			putchar(a);
 		}
