@@ -1,13 +1,10 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there 
+/**
+ * Description: main - print if the number is negative or postive and equals with zero
  *
- * Description: main - Entry point
- *
- * REturn: always 0 (sucess)
+ * Return: Always 0 (Sucess)
  */
 int main(void)
 {
@@ -15,17 +12,17 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n >0)
+	if (n > 0)
 	{
-	  printf("%d is postive\n ", n);
+	  printf("%i is postive\n ", n);
 	}
-	  else if(n==0)
+	  else if (n < 0)
 	  {
-	     printf("%d is Zero\n", n);
+	     printf("%i is negative\n", n);
 	  }
 	  else
 	  {
-	     printf("%d is negative\n", n);
+	     printf("%i is zero\n", n);
 	}
 	return (0);
 }
