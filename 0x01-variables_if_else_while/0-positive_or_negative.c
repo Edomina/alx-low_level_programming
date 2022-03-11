@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* main - print if the number is negative 
+/**
+ * main - print if the number is negative 
  * or postive and equals with zero
  *
  * Return: Always 0 (Success)
