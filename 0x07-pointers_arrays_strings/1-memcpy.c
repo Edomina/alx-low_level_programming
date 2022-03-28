@@ -1,33 +1,21 @@
 #include "main.h"
 
 /**
- * _strncat - two words
- * @dest : pointer to char param
- * @src : pointer to char param
- * @n : int parameter
- * Return: *dest
- */
-
-char *_strncat(char *dest, char *src, int n)
+  * _memcpy - copy memory area
+  * @dest: dest memory area
+  * @src: source memory area
+  * @n: bytes from memory area to copy
+  *
+  * Return: memory area replaced
+  */
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int m;
-	int i;
+	unsigned int a;
 
-	m = 0;
-
-	for (i = 0; i < 1000; i++)
+	for (a = 0; a < n; a++)
 	{
-		if (dest[i] == '\0')
-		{
-			break;
-		}
-		m++;
+		dest[a] = src[a];
 	}
 
-	for (i = 0; src[i] != '\0' && i < n; i++)
-	{
-		dest[m + i] = src[i];
-	}
-	dest[m + i] = '\0';
 	return (dest);
 }
